@@ -159,6 +159,36 @@ BoxCollider2D:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
   m_PrefabInternal: {fileID: 932390090}
+--- !u!114 &314972125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314972124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1974213ab64a652419fdb6438b8b1119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  jumpForce: 300
+--- !u!95 &314972126
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314972124}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8898cd3e8494d4543963f09421265486, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!60 &314972128
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -566,10 +596,12 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &758599393
 Transform:
   m_ObjectHideFlags: 0
@@ -709,8 +741,23 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 25b8857ef41eb2842aa551ed4b3c178a,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 5800000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+    - {fileID: 11400000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+    - {fileID: 9500000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1095831925

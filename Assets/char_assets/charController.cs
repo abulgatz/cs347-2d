@@ -2,7 +2,8 @@
 using System.Collections;
 using System;
 
-public class charController : MonoBehaviour {
+public class charController : MonoBehaviour 
+{
 	public float moveSpeed = 3.0f;
 	public float jumpForce = 300.0f;
 	private Vector2 moveDir;

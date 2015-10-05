@@ -320,6 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
   pc: {fileID: 0}
+  color1: {r: 1, g: 0, b: 0, a: 1}
+  color2: {r: 0, g: 0, b: 1, a: 1}
 --- !u!60 &399372333
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -623,9 +625,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 555375040}
   - 212: {fileID: 555375039}
-  - 60: {fileID: 555375041}
   - 114: {fileID: 555375038}
   - 50: {fileID: 555375042}
+  - 60: {fileID: 555375041}
   m_Layer: 0
   m_Name: crack
   m_TagString: Untagged
@@ -668,7 +670,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 66dceb39842723a46bd4bdaf45718a2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac94730ce8594c04daa5533bce37e55c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &555375040
 Transform:
@@ -677,8 +679,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 555375037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.13000011, y: -2.8599999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.11999989, y: -2.9000001, z: 0}
+  m_LocalScale: {x: .526609838, y: .394500881, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -695,29 +697,10 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .330000013, y: -.0500000007}
-      - {x: .289999992, y: -.0299999993}
-      - {x: .319999993, y: .0599999987}
-      - {x: .319999993, y: .300000012}
-      - {x: .310000002, y: .330000013}
-      - {x: .230000004, y: .409999996}
-      - {x: .140000001, y: .479999989}
-      - {x: -.100000001, y: .479999989}
-      - {x: -.150000006, y: .439999998}
-      - {x: -.230000004, y: .370000005}
-      - {x: -.239999995, y: .340000004}
-      - {x: -.25, y: .209999993}
-      - {x: -.209999993, y: .189999998}
-      - {x: -.209999993, y: .129999995}
-      - {x: -.170000002, y: .109999999}
-      - {x: -.189999998, y: .00999999978}
-      - {x: -.280000001, y: -.100000001}
-      - {x: -.280000001, y: -.439999998}
-      - {x: -.25, y: -.469999999}
-      - {x: -.150000006, y: -.5}
-      - {x: .25999999, y: -.5}
-      - {x: .360000014, y: -.400000006}
-      - {x: .360000014, y: -.100000001}
+    - - {x: -2, y: 1.60000002}
+      - {x: -2, y: -1.60000002}
+      - {x: 2, y: -1.60000002}
+      - {x: 2, y: 1.60000002}
 --- !u!50 &555375042
 Rigidbody2D:
   serializedVersion: 2
@@ -765,6 +748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
   pc: {fileID: 0}
+  color1: {r: 1, g: 0, b: 0, a: 1}
+  color2: {r: 0, g: 0, b: 1, a: 1}
 --- !u!60 &578551039
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -868,8 +853,8 @@ Camera:
   m_GameObject: {fileID: 758599388}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 1, a: .00392156886}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -901,7 +886,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 758599388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .200000003, y: 0, z: -10}
+  m_LocalPosition: {x: .200000003, y: .0500000007, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1046,6 +1031,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 25b8857ef41eb2842aa551ed4b3c178a,
         type: 3}
+    - target: {fileID: 100000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5800000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
     - {fileID: 11400000, guid: 59de9545fa1ba0b4c8398124432ce755, type: 2}
@@ -1083,6 +1072,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
   pc: {fileID: 0}
+  color1: {r: 1, g: 0, b: 0, a: 1}
+  color2: {r: 0, g: 0, b: 1, a: 1}
 --- !u!60 &980029179
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1169,6 +1160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 0}
   pc: {fileID: 0}
+  color1: {r: 1, g: 0, b: 0, a: 1}
+  color2: {r: 0, g: 0, b: 1, a: 1}
 --- !u!60 &1085515159
 PolygonCollider2D:
   m_ObjectHideFlags: 0

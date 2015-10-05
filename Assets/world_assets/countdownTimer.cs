@@ -8,6 +8,7 @@ public class countdownTimer : MonoBehaviour
 	public float timer = 15.0f;
 	public SpriteRenderer item_sr;
 	public PolygonCollider2D item_pc;
+
 	// Use this for initialization
 	void Start () 
 	{

@@ -17,7 +17,7 @@ public class countdownTimer : MonoBehaviour
 	void Update () 
 	{
 		timer -= Time.deltaTime;
-		timerText.text = "Remaining Time: " + timer.ToString ();
+		timerText.text = "Remaining Time: " + timer.ToString ("0");
 		if (timer <= 0) 
 		{
 			Application.LoadLevel(2);

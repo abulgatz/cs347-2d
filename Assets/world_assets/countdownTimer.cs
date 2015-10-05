@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class countdownTimer : MonoBehaviour 
 {
-	public Text timerText;
+	public Text timerText = "Remaining Time";
 	public float timer = 15.0f;
 	public SpriteRenderer item_sr;
 	public PolygonCollider2D item_pc;

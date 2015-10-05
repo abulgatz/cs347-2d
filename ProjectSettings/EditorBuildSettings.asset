@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/stages/first_stage.unity
   - enabled: 1
     path: Assets/stages/second_stage.unity
+  - enabled: 1
+    path: Assets/stages/game_over.unity

@@ -5,8 +5,6 @@ public class change_scene : MonoBehaviour
 {
 	void OnTriggerEnter2D (Collider2D other)
 	{
-
-		Debug.Log("I hit something: " + other.gameObject);
 		if (other.gameObject.tag == "Player")
 		{
 			StartCoroutine("LoadNextLevel");

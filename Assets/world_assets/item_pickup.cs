@@ -19,6 +19,7 @@ public class item_pickup : MonoBehaviour
 		{
 			item_sr.enabled = false;
 			item_pc.enabled = false;
+			countdownTimer.timer+=10.0f;
 		}
 	}
 }

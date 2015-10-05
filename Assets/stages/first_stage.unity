@@ -1907,7 +1907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
-  timer: 15
 --- !u!114 &2106691358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,6 +1959,6 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 132.399994, y: 11.6999998}
+  m_AnchoredPosition: {x: 101.400002, y: 20.6000004}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class countdownTimer : MonoBehaviour 
 {
+	public int level_index = 2;
 	public Text timerText;
 	public static float timer = 15.0f;
 
@@ -20,7 +21,7 @@ public class countdownTimer : MonoBehaviour
 		timerText.text = "Remaining Time: " + timer.ToString ("0");
 		if (timer <= 0) 
 		{
-			Application.LoadLevel(2);
+			Application.LoadLevel(level_index);
 		}
     }
 }

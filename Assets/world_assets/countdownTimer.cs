@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -6,7 +6,6 @@ public class countdownTimer : MonoBehaviour
 {
 	public Text timerText;
 	public static float timer = 15.0f;
-
 
 	// Use this for initialization
 	void Start () 

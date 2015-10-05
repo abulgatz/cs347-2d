@@ -22,7 +22,7 @@ public class charController : MonoBehaviour
 
 	void OnGUI(){
 		GUI.Label(textArea,"\tMysterious Voice: The world has changed and its up to you to\n\tput our world back the way it was.\n\tLeft and Right arrow keys move you horizontally, " +
-			"the space key jumps,\n\tC key will allow to you phase between worlds and will make new things visible\n\twhile making others disappear.");
+			"the space key jumps,\n\tC key will allow to you phase between worlds and will make new things visible \n\twhile making others disappear. Fruit gives you more time before the \n\tworld becomes so unstable it disintegrates.");
 	}
 	
 	// Update is called once per frame

@@ -5,6 +5,8 @@ public class world_change : MonoBehaviour
 {
 	public SpriteRenderer sr;
 	public PolygonCollider2D pc;
+	public Color color1 = Color.blue;
+	public Color color2 = Color.red;
 	// Use this for initialization
 	void Start () 
 	{
@@ -19,11 +21,13 @@ public class world_change : MonoBehaviour
 		{
 			sr.enabled = false;
 			pc.enabled = false;
+			Camera.main.backgroundColor = color1;
 		} 
 		else if (Input.GetKeyDown (KeyCode.C) && sr.enabled == false && pc.enabled == false) 
 		{
 			sr.enabled = true;
 			pc.enabled = true;
+			Camera.main.backgroundColor = color2;
 		}
 	}
 }
